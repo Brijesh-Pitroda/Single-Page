@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Single Page</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            html {
+                scroll-behavior: smooth;
+            }
+
+            body {
+                background-color: #5a5a5a;
+            }
+
+            .nav {
+                width: 100%;
+                height: 50px;
+                background-color: #411530;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 3px 0;
+            }
+
+            li {
+                list-style-type: none;
+            }
+
+            a {
+                text-decoration: none;
+            }
+
+            ul {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+            }
+
+            ul li {
+                margin: 12px;
+            }
+
+            ul li a {
+                border-radius: 25px;
+                padding: 8px 16px;
+                background-color: #f5e8e4;
+                color: #d1512d;
+                border: 1px solid #f5c7a9;
+                font-weight: bold;
+                font-size: 18px;
+            }
+
+            ul li a:hover {
+                background-color: #d1512d;
+                color: #f5e8e4;
+            }
+
+            #home {
+                width: 100%;
+                height: 400px;
+                background-color: #e7d4b5;
+            }
+
+            #about {
+                width: 100%;
+                height: 400px;
+                background-color: #81a263;
+            }
+
+            #contact {
+                width: 100%;
+                height: 400px;
+                background-color: #c6dcba;
+            }
+
+            #login {
+                width: 100%;
+                height: 400px;
+                background-color: #83b4ff;
+            }
+
+            #register {
+                width: 100%;
+                height: 400px;
+                background-color: #55ad9b;
+            }
+
+            .content {
+                text-align: center;
+                font-size: 24px;
+                color: black;
+            }
+
+            #top {
+                width: 50px;
+                background-color: #232D3F;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: fixed;
+                bottom: 50px;
+                right: 50px;
+                border-radius: 50px;
+            }
+
+            #top a {
+                padding: 5px 10px 10px;
+                font-weight: bolder;
+                font-size: 32px;
+                color: #fff;
+            }
+
+            #top a:active {
+                color: #e5e5e5;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="nav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#login">Login</a></li>
+                <li><a href="#register">Register</a></li>
+            </ul>
+        </div>
+
+        <div class="content" id="home">Home</div>
+        <div class="content" id="about">About</div>
+        <div class="content" id="contact">Contact</div>
+        <div class="content" id="login">Login</div>
+        <div class="content" id="register">Register</div>
+
+        <div id="top">
+            <a href="#" title="top">&uarr;</a>
+        </div>
+    </body>
+</html>
